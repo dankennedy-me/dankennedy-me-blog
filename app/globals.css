@@ -1,0 +1,18 @@
+/* app/globals.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* hex colors for mid century modern */
+
+:root {
+  --primary:  #000080; 
+  --secondary: #53565A;
+  --success: #556b2f;
+  --warning: #F2C94C;
+  --danger: #b7410e;
+  --info: #008080;
+}
