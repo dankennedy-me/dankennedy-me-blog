@@ -25,7 +25,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { MdEmail, MdHome } from 'react-icons/md'
 import { BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 
-const Links = ['Blog', 'Music', 'About']
+const Links = ['About']
 
 const NavLink = (props) => {
   const { children } = props
