@@ -2,8 +2,8 @@
 
 import { Providers } from 'app/providers'
 import Navbar from './components/Navbar'
-import Carousel
- from './components/Carousel'
+import Carousel from './components/Carousel'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Dan\'s Blog',
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <Carousel />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
