@@ -40,7 +40,7 @@ const NavLink = (props) => {
         textDecoration: 'none',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
-      href={children.toLowerCase()}>
+      href={"/"+children.toLowerCase()}>
       {children}
     </Box>
   )
@@ -67,7 +67,7 @@ export default function Simple() {
               </Link>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                <NavLink href='/about'>About</NavLink>
+                <NavLink href='https://dankennedy.me/about'>About</NavLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -104,7 +104,7 @@ export default function Simple() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <NavLink id={link} key={link} as={'a'} href={link.toLowerCase()}>{link}</NavLink>
+                <NavLink id={link} key={link} as={'a'} href={"/"+link.toLowerCase()}>{link}</NavLink>
               ))}
             </Stack>
           </Box>

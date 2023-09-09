@@ -12,13 +12,14 @@ export async function generateStaticParams() {
       body: post.body
     }))
   }
-
-  export const dynamicParams = false;
+  
+  // return 404 if page doesn't exist
+  export const dynamicParams = true;
 
   export default async function Page({ params }) {
     const slug = await params
     const res = await GetBlogPost(slug)
-    console.log(res)
+    console.log('P A R A M S ' + res[0].slug)
     return (
         <main>
             <BlogPageData data={res} />
@@ -26,6 +27,7 @@ export async function generateStaticParams() {
     )
   }
 
+  // the metadata
   export async function generateMetadata({ params }) {
     const slug = await params
     const blogTitle = ': Dan\'s Blog'
