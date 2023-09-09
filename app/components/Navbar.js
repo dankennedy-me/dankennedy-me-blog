@@ -22,7 +22,7 @@ import {
 } from '@chakra-ui/react'
 // Import icons
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { MdEmail } from 'react-icons/md'
+import { MdEmail, MdHome } from 'react-icons/md'
 import { BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 
 const Links = ['Blog', 'Music', 'About']
@@ -62,7 +62,9 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link href="/">dk<sup>me</sup></Link>
+              <Link href="/">
+                <MdHome size={'1.75rem'} />
+              </Link>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
                 <NavLink href='/about'>About</NavLink>

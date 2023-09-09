@@ -8,7 +8,7 @@ import { Box, Container, Divider, Text } from '@chakra-ui/react'
 import { Prose } from "@nikolovlazar/chakra-ui-prose";
 
 export default async function BlogData({...props}) {
-  
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day:'numeric' }
     return (
     <Container>
       
@@ -16,12 +16,10 @@ export default async function BlogData({...props}) {
         <Prose>
         <Box mt={'2rem'} mb={'2rem'} as={'div'} key={blog.id}>
             <Text as={'h2'} fontSize={'4xl'}>
-                {blog.title}
+                {blog.title} <br /> 
             </Text>
+            <Box>{new Date(blog.date_created).toLocaleDateString('en-us', options)}</Box> 
             <Box as={'div'} dangerouslySetInnerHTML={{ __html: blog.body }} />
-            <Text fontSize={'sm'} float={'right'} opacity={'0.5'}>
-                {new Date(blog.date_created).toLocaleDateString('en-us')}
-            </Text>
             <Divider />
         </Box>
         </Prose>
