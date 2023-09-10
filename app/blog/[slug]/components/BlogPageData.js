@@ -3,7 +3,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
 import { Box, Container, Divider, Text } from '@chakra-ui/react'
 import { Prose } from "@nikolovlazar/chakra-ui-prose";
 

@@ -19,7 +19,7 @@ export async function generateStaticParams() {
   export default async function Page({ params }) {
     const slug = await params
     const res = await GetBlogPost(slug)
-    console.log('P A R A M S ' + res[0].slug)
+
     return (
         <main>
             <BlogPageData data={res} />
