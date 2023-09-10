@@ -6,6 +6,7 @@ import Carousel from './components/Carousel'
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
+  
   title: 'Dan\'s Blog',
   description: 'The personal blog of Dan Kennedy, web developer.',
 }
