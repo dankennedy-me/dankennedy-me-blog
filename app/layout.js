@@ -14,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="prefetch" href="https://cms.dankennedy.me" />
       <body>
         <Providers>
           <Navbar />
