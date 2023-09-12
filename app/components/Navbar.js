@@ -82,7 +82,7 @@ export default function Simple() {
                 minW={0}>
                 <Avatar
                   size={'sm'}
-                  alt={'Click for contact'}
+                  name={'Click for contact'}
                   src={
                     '/img/dan-simpsons_100x100.jpg'
                   }
