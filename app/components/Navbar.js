@@ -82,7 +82,7 @@ export default function Simple() {
                 <Avatar
                   size={'sm'}
                   src={
-                    '/img/dan-simpsons.jpg'
+                    '/img/dan-simpsons_100x100.jpg'
                   }
                 />
               </MenuButton>
