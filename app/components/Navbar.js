@@ -63,7 +63,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link href={process.env.ROOT_URL} title="Home">
+              <Link href={`${process.env.ROOT_URL}`} title="Home">
                 <MdHome size={'1.75rem'} />
               </Link>
             </Box>
