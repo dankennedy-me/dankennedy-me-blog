@@ -35,5 +35,6 @@ export async function generateStaticParams() {
 
     return {
       title: res[0].title + blogTitle,
+      description: res[0].body.substring(0,154) + '...'
     }
   }
