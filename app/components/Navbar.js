@@ -63,9 +63,9 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link href='https://www.dankennedy.me' title="Home">
+              <a href='https://www.dankennedy.me' title="Home">
                 <MdHome size={'1.75rem'} />
-              </Link>
+              </a>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
                 <NavLink href='https://dankennedy.me/about'>About</NavLink>
