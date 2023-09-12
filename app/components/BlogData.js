@@ -20,7 +20,7 @@ export default async function BlogData() {
             <Box mt={'2rem'} mb={'2rem'} as={'div'} key={blog.id}>
               <Text as={'h2'} fontSize={'4xl'}>
                 <Link title='Click for full post' href={'blog/' + blog.slug}>{blog.title}</Link>
-                <Text fontSize={'sm'} opacity={'0.5'} style={{ marginTop: '2rem' }}>
+                <Text fontSize={'sm'} style={{ marginTop: '2rem' }}>
                   {new Date(blog.date_created).toLocaleDateString('en-us', options)}
                 </Text>
               </Text>
