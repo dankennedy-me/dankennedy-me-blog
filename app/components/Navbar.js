@@ -63,7 +63,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link href="/">
+              <Link href="/" title="Home">
                 <MdHome size={'1.75rem'} />
               </Link>
             </Box>
@@ -78,9 +78,11 @@ export default function Simple() {
                 rounded={'full'}
                 variant={'link'}
                 cursor={'pointer'}
+                aria-label='Avatar button'
                 minW={0}>
                 <Avatar
                   size={'sm'}
+                  alt={'Click for contact'}
                   src={
                     '/img/dan-simpsons_100x100.jpg'
                   }
