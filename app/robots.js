@@ -3,6 +3,6 @@ export default function robots() {
     rules: {
       userAgent: '*',
     },
-    sitemap: 'https://dankennedy.me/sitemap.xml',
+    sitemap: 'https://www.dankennedy.me/sitemap.xml',
   }
 }
