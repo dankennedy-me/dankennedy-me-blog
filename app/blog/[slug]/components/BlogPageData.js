@@ -9,7 +9,7 @@ import { Prose } from "@nikolovlazar/chakra-ui-prose";
 export default async function BlogData({...props}) {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day:'numeric' }
     return (
-    <Container>
+    <Container as={'div'}>
       
       {props.data.map((blog) => (
         <Prose>

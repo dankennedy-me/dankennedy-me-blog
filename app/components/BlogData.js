@@ -2,7 +2,7 @@
 
 'use client'
 
-import React from 'react'
+import React from 'react' 
 import Link from 'next/link'
 import GetAllBlogs from '@/lib/getAllBlogs'
 import { Box, Container, Divider, Text } from '@chakra-ui/react'
@@ -24,7 +24,7 @@ export default async function BlogData() {
                   {new Date(blog.date_created).toLocaleDateString('en-us', options)}
                 </Text>
               </Text>
-              <Box as={'div'} dangerouslySetInnerHTML={{ __html: blog.body }} />
+              <Box as={'div'} dangerouslySetInnerHTML={{ __html: blog.body.substring(0,150)+ `<a href='/blog/${blog.slug}'>...[Continue]</a>` }} />
             </Box>
             <Divider />
           </Prose>
