@@ -10,6 +10,9 @@ const createSitemap = (posts) => `<?xml version="1.0" encoding="UTF-8"?>
     <url>
       <loc>${`${ROOT_URL}/about`}</loc>
     </url>
+    <url>
+      <loc>${`${ROOT_URL}/gallery`}</loc>
+    </url>
         ${posts.data.map(({ slug }) => {
             return `
                 <url>
