@@ -26,7 +26,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { MdEmail, MdHome } from 'react-icons/md'
 import { BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 
-const Links = ['About']
+const Links = ['About', 'Gallery']
 
 const NavLink = (props) => {
   const { children } = props
@@ -69,6 +69,7 @@ export default function Simple() {
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
                 <NavLink href='https://dankennedy.me/about'>About</NavLink>
+                <NavLink href='https://dankennedy.me/gallery'>Gallery</NavLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>

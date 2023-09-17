@@ -9,7 +9,7 @@ export default function PictureGrid({...props}){
         <Prose>
         <Container mt={'4rem'}>
             <Text as={'h2'} size={'2xl'}>Gallery</Text>
-            <Badge variant={'outline'} colorScheme={'green'}>{props.count} images</Badge>
+            <Badge mb={'2rem'} variant={'outline'} colorScheme={'green'}>{props.count} images</Badge>
             <SimpleGrid minChildWidth='200px' spacing={10} alignItems={'center'}>
                 {props.pics.map((pic) => (
                   <Box position={'relative'} as={'div'} height='200px' borderRadius={'15px'} backgroundImage={'https://cms.dankennedy.me/assets/'+pic.id} backgroundSize={'cover'} backgroundRepeat={'no-repeat'}>
